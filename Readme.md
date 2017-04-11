@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Галина Тужик](https://up.htmlacademy.ru/htmlcss/17/user/402337).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
