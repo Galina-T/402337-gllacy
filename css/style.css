@@ -1,0 +1,53 @@
+body {
+	font-family: "roboto", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #ffffff;
+	line-height: 22px;
+	background-color: #849d8f; 
+}
+
+.info-title {
+	font-size: 24px;
+	font-weight: medium;
+	line-height: 30px;
+	color: #323232;
+}
+
+.catalog-title {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 41px;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+.slade-title {
+	font-size: 60px;
+	line-height: 60,35px;
+}
+
+.offer-title {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.menu-header {
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.menu-active {
+	color: #323232;
+}
+
+.menu-catalog {
+	font-size: 14px;
+	line-height: 16px;
+	color: #323232;
+}
+
+
+
