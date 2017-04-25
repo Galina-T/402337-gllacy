@@ -52,8 +52,10 @@
 			  					<a href="#">Поиск</a>
 			  					<div class="search">
 			  						<form class="search-form" action="#" method="post">
-			  							<input type="search" name="search" id="search" required>
-			  							<label class="search-field" for="search">Что ищем?</label>
+			  							<div class="search-field">
+			  								<input type="search" name="search" id="search" required>
+			  								<label class="search-placeholder" for="search">Что ищем?</label>
+			  							</div>
 			  						</form>
 			  					</div>
 			  				</div>
@@ -61,48 +63,24 @@
 			  					<a href="#">Вход</a>
 			  					<div class="enter">
 			  						<form class="enter-form" action="#" method="post">
-			  							<div class="login">
+			  							<div class="login-field">
 			  								<input type="email" name="login" id="login" required>
-			  								<label class="login-field" for="login">Электронная почта</label>
+			  								<label class="login-placeholder" for="login">Электронная почта</label>
 			  							</div>
-			  							<div class="password">
+			  							<div class="password-field">
 			  								<input type="password" name="password" id="password" required>
-			  								<label class="password-field" for="password">Пароль</label>
+			  								<label class="password-placeholder" for="password">Пароль</label>
 			  							</div>
 			  							<input class="btn enter-form-btn" type="submit" value="Войти">
+			  							<div class="help">
+			  								<a class="new-password" href="#">Забыли пароль?</a>
+			  								<a class="new-user" href="#">Новая регистрация</a>
+			  							</div>
 			  						</form>
-			  						<div class="help">
-			  							<a class="new-password" href="#">Забыли пароль?</a>
-			  							<a class="new-user" href="#">Новая регистрация</a>
-			  						</div>
 			  					</div>
 			  				</div>
 			  				<div class="action-basket">
 			  					<a href="#">Пусто</a>
-			  					<div class="basket">
-			  						<table class="basket-product">
-					  					<tr>
-					  						<td></td>
-					  						<td></td>
-					  						<td></td>
-					  						<td></td>
-					  						<td></td>
-					  					</tr>
-					  					<tr>
-					  						<td></td>
-					  						<td></td>
-					  						<td></td>
-					  						<td></td>
-					  						<td></td>
-					  					</tr>
-					  					<tr>
-					  						<td>Итого: 0 руб.</td>
-					  					</tr>
-			  						</table>
-			  						<div class="basket-checkout">
-			  							<a class="btn basket-btn">Оформить заказ</a>
-			  						</div>
-			  					</div>
 			  				</div>
 						</div>
 			  			<div class="connect">
@@ -242,18 +220,18 @@
 				  	</section>
 			  		<div class="map">
 			  			<img src="img/map.png" width="1250" height="640" alt="карта">
+			  			<address class="address-contacts">
+					  		<p>Адрес главного офиса и офлайн магазина:
+					  		<span>ул. Б. Конюшенная
+					  		19/8, Санкт-Петербург</span></p>
+					  		<p>Для заказов по телефону:
+					  		<span>8 812 45-25-25</span>
+					  		(с 10 до 20 ежедневно)</p>
+					  		<a href="#">Форма обратной связи</a>
+			  			</address>
 			  		</div>	  		
-			  		<address class="address-contacts">
-				  		<p>Адрес главного офиса и офлайн магазина:
-				  		<span>ул. Б. Конюшенная
-				  		19/8, Санкт-Петербург</span></p>
-				  		<p>Для заказов по телефону:
-				  		<span>8 812 45-25-25</span>
-				  		(с 10 до 20 ежедневно)</p>
-				  		<a href="#">Форма обратной связи</a>
-			  		</address>
 			  		<div class="feedback-form">
-			  			<button class="cancel" type="button">X</button>
+			  			<button class="cancel" type="button">Закрыть</button>
 			  			<form class="feedback">
 			  				<fieldset>
 			  					<legend>Мы обязательно вам ответим!</legend>
@@ -300,7 +278,7 @@
 				  	<section class="footer-copyright"> 
 				  		<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_academy.png" width="108" height="38" alt="логотип академии"></a>
 				  		<p>
-				  			Сделано в<a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&#169;2017
+				  			Сделано в<a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017
 				  		</p>
 				  	</section>
 				</footer>
