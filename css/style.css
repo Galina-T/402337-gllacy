@@ -4,7 +4,118 @@ body {
 	font-weight: normal;
 	color: #ffffff;
 	line-height: 22px;
-	background-color: #849d8f; 
+	background-color: #849d8f;
+	margin: 0;
+  	padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1146px;
+	padding: 0 27px;
+	margin: 0 auto;
+}
+
+.index-logo {
+	width: 154px;
+	float: left;
+}
+
+.main-navigation{
+	width: 685px;
+	float: left;
+}
+
+.user-block {
+	width: 267px;
+	float: right;
+}
+
+.heading-title {
+	margin-bottom: 26px;
+}
+
+.topbar {
+	margin-bottom: 40px;
+}
+
+.carousel {
+	margin-bottom: 40px;
+}
+
+.special-offers {
+	margin-bottom: 40px;
+}
+
+.offer {
+	width: 560px;
+	float: left;
+	margin-right: 26px;
+}
+
+.offer:last-child {
+	margin-right: 0px;
+}
+
+.catalog {
+	font-size: 0px;
+}
+
+.card-product {
+	width: 267px;
+	margin-right: 26px;
+	margin-bottom: 40px; 
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+.card-product:nth-child(4n) {
+	margin-right: 0px;
+}
+
+.main-info {
+	margin-bottom: 40px;
+}
+
+.spamming {
+	margin-bottom: 40px;
+}
+
+.spamming-block {
+	width: 560px;
+	float: left;
+	margin-right: 26px;
+}
+
+.spamming-block:last-child {
+	margin-right: 0px;
+}
+
+.address-contacts {
+	width: 302px;
+	float: right;
+}
+
+.footer-social {
+	width: 267px;
+	float: left;
+	margin-right: 26px;
+}
+
+.footer-navigation {
+	width: 560px;
+	float: left; 
+}
+
+.footer-copyright {
+	width: 267px;
+	float: right;
 }
 
 .info-title {
@@ -26,7 +137,7 @@ h2 {
 
 .slade-title {
 	font-size: 60px;
-	line-height: 60,35px;
+	line-height: 60.35px;
 }
 
 .offer-title {
