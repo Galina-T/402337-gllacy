@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="ttps://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -14,14 +15,14 @@
 			</div>
 	  		<nav class="main-navigation">
 			  	<ul class="menu-header">
-				  	<li>
-				  		<a class="menu-active" href="#">Каталог</a>
-				  	<!--<ul class="menu-catalog">
+				  	<li class="menu-header-item menu-active-page">
+				  		<a class="menu-active menu-header-link" href="#">Каталог</a>
+				  		<ul class="menu-catalog">
 					  		<li class="menu-catalog-title">
-					  			Новинки
+					  			<a>Новинки</a>
 					  		</li>
 					  		<li class="menu-catalog-item">
-					  			<a href="#">Сливочное</a>
+					  			<a class="menu-catalog-item-active" href="#">Сливочное</a>
 					  		</li>
 					  		<li class="menu-catalog-item">
 					  			<a href="#">Щербеты</a>
@@ -32,32 +33,32 @@
 					  		<li class="menu-catalog-item">
 					  			<a href="#">Мелорин</a>
 					  		</li>
-					  	</ul>-->
+					  	</ul>
 				 	</li>
 				  	<li>
-				  		<a href="#">Доставка и оплата</a>
+				  		<a class="menu-header-link" href="#">Доставка и оплата</a>
 				  	</li>
 				  	<li>
-				  		<a href="#">О Компании</a>
+				  		<a class="menu-header-link" href="#">О Компании</a>
 				  	</li>
 			  	</ul>
 		  	</nav>
-		  	<div class="user-block">
+		  	<div class="user-block user-block-catalog">
 		  		<div class="actions">
 		  			<div class="action-search">
-			  			<a href="#">Поиск</a>
-			  		<!--<div class="search">
+			  			<a class="user-block-btn action-search-btn" href="#"></a>
+			  			<div class="search">
 			  				<form class="search-form" action="#" method="post">
 			  					<div class="search-field">
 			  						<input type="search" name="search" id="search" required>
 			  						<label class="search-placeholder" for="search">Что ищем?</label>
 			  					</div>
 			  				</form>
-			  			</div>-->
+			  			</div>
 			  		</div>
 			  		<div class="action-enter">
-			  			<a href="#">Вход</a>
-			  		<!--<div class="enter">
+			  			<a class="user-block-btn action-enter-btn" href="#">Вход</a>
+			  			<div class="enter">
 			  				<form class="enter-form" action="#" method="post">
 			  					<div class="login-field">
 			  						<input type="email" name="login" id="login" required>
@@ -75,38 +76,38 @@
 			  						</div>
 			  					</div>
 			  				</form>
-			  			</div>-->
+			  			</div>
 			  		</div>
 			  		<div class="action-basket">
-			  			<a href="#">2 товара</a>
-			  		<!--<div class="basket">
+			  			<a class="user-block-btn action-basket-btn" href="#">2 товара</a>
+			  			<div class="basket">
 			  				<table class="basket-product">
 			  					<tr>
-			  						<td><button type="button">Закрыть</button></td>
-			  						<td><img src="img/ice_1.jpg" width="33" height="33" alt="фотография мороженого"></td>
-			  						<td>Пломбир с апельсиновым джемом</td>
-			  						<td>1,5 кг х <span>200 руб</span></td>
-			  						<td>300 руб.</td>
+			  						<td class="basket-product-remove"><button class="basket-product-close" type="button" title="Закрыть">Закрыть</button></td>
+			  						<td class="basket-product-img"><img src="img/ice_1.jpg" width="33" height="33" alt="фотография мороженого"></td>
+			  						<td class="basket-product-name">Пломбир с апельсиновым джемом</td>
+			  						<td class="basket-product-price">1,5 кг х <span>200 руб.</span></td>
+			  						<td class="basket-product-total">300 руб.</td>
 			  					</tr>
 			  					<tr>
-			  						<td><button type="button">Закрыть</button></td>
-			  						<td><img src="img/ice_3.jpg" width="33" height="33" alt="фотография мороженого"></td>
-			  						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-			  						<td>1,5 кг х <span>300 руб</span></td>
-			  						<td>450 руб.</td>
+			  						<td class="basket-product-remove"><button class="basket-product-close" type="button" title="Закрыть">Закрыть</button></td>
+			  						<td class="basket-product-img"><img src="img/ice_3.jpg" width="33" height="33" alt="фотография мороженого"></td>
+			  						<td class="basket-product-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+			  						<td class="basket-product-price">1,5 кг х <span>300 руб.</span></td>
+			  						<td class="basket-product-total">450 руб.</td>
 			  					</tr>
 			  					<tr>
-			  						<td>Итого: 750 руб.</td>
+			  						<td class="total" colspan="5">Итого: 750 руб.</td>
 			  					</tr>
 			  				</table>
 			  				<div class="basket-checkout">
 			  					<a href="#" class="btn basket-btn">Оформить заказ</a>
 			  				</div>
-			  			</div>-->
+			  			</div>
 			  		</div>
 		  		</div>
 		  		<div class="connect">
-		  			<p class="time">c 10 до 20, ежедневно</p>
+		  			<p class="time">С 10 до 20, ежедневно</p>
 		  			<p class="phone">8 812 450-25-25</p>
 		  		</div>
 		  	</div>
@@ -121,51 +122,90 @@
 			  			<a href="#">Каталог</a>
 			  		</li>
 			  		<li class="breadcrumbs-element">
-			  			<a class="breadcrumbs-active">Сливочное</a>
+			  			<span class="breadcrumbs-active">Сливочное</span>
 			  		</li>
 			  	</ul>
-			  	<h1 class="catalog-title">сливочное мороженое</h1>
+			  	<h1 class="catalog-title">Сливочное мороженое</h1>
 		  	</div>
 		  	<aside class="topbar">
 		  		<form class="filters" action="#" method="post">
-			  		<fieldset class="form-sorting">
+			  		<fieldset class="filters-item form-sorting">
 			  			<legend>Сортировка:</legend>
-			  			<select name="sorting">
-			  				<option value="top">по популярности</option>
-			  				<option value="low">сначала недорогие</option>
-			  				<option value="high">сначала дорогие</option>
-			  				<option value="fat">по жирности</option>
-			  			</select>
+			  			<div class="form-sorting-select">
+				  			<select class="select" name="sorting">
+				  				<option value="top">по популярности</option>
+				  				<option value="low">сначала недорогие</option>
+				  				<option value="high">сначала дорогие</option>
+				  				<option value="fat">по жирности</option>
+				  			</select>
+				  			<i class="select-icon"></i>
+				  		</div>
 			  		</fieldset>
-			  		<fieldset class="form-price">
-			  			<legend>Цена: 100 руб. - 500 руб.</legend>
+			  		<fieldset class="filters-item form-price">
+			  			<legend>Цена: 100 руб. &mdash; 500 руб.</legend>
 			  			<div class="price-sorting">
-			  				<img src="#" alt="ползунок">		  					
+			  				<div class="price-scale">
+			  					<div class="price-range">
+			  						<div class="price-toggle price-toggle-min"></div>
+			  						<div class="price-toggle price-toggle-max"></div>
+			  					</div>
+			  				</div>	  					
 			  			</div>
 			  		</fieldset>
-			  		<fieldset class="form-fat">
+			  		<fieldset class="filters-item form-fat">
 			  			<legend>Жирность:</legend>
-			  			<input type="radio" name="fat" value="pin-1" id="fat-1"> 
-						<label for="fat-1">0%</label>
-						<input checked type="radio" name="fat" value="pin-2" id="fat-2">
-						<label for="fat-2">до 10%</label>
-						<input  type="radio" name="fat" value="pin-3" id="fat-3">
-						<label for="fat-3">до 30%</label>
-						<input  type="radio" name="fat" value="pin-4" id="fat-4">
-						<label for="fat-4">выше 30%</label>
+			  			<div class="form-fat-radio">
+				  			<input class="form-fat-input" type="radio" name="fat" value="pin-1" id="fat-1"> 
+							<label class="form-fat-label" for="fat-1">
+								<span class="fat-indicator"></span>
+								0%
+							</label>
+							<input class="form-fat-input" checked type="radio" name="fat" value="pin-2" id="fat-2">
+							<label class="form-fat-label" for="fat-2">
+								<span class="fat-indicator"></span>
+								до 10%
+							</label>
+							<input  class="form-fat-input" type="radio" name="fat" value="pin-3" id="fat-3">
+							<label class="form-fat-label" for="fat-3">
+								<span class="fat-indicator"></span>
+								до 30%
+							</label>
+							<input  class="form-fat-input" type="radio" name="fat" value="pin-4" id="fat-4">
+							<label class="form-fat-label" for="fat-4">
+								<span class="fat-indicator"></span>
+								выше 30%
+							</label>
+						</div>
 			  		</fieldset>
-			  		<fieldset class="form-topping">
+			  		<fieldset class="filters-item form-topping">
 			  			<legend>Наполнители:</legend>
-			  			<input checked type="checkbox" name="topping" id="topping-1">
-						<label for="topping-1">шоколадные</label>
-						<input checked type="checkbox" name="topping" id="topping-2">
-						<label for="topping-2">сахарные присыпки</label>
-						<input type="checkbox" name="topping" id="topping-3">
-						<label for="topping-3">фрукты</label>
-						<input type="checkbox" name="topping" id="topping-4">
-						<label for="topping-4">сиропы</label>
-						<input type="checkbox" name="topping" id="topping-5">
-						<label for="topping-5">джемы</label>
+			  			<div class="form-topping-check">
+				  			<input class="form-topping-input" checked type="checkbox" name="topping" id="topping-1">
+							<label class="form-topping-label" for="topping-1">
+								<span class="topping-indicator"></span>
+								шоколадные
+							</label>
+							<input class="form-topping-input" checked type="checkbox" name="topping" id="topping-2">
+							<label class="form-topping-label" for="topping-2">
+								<span class="topping-indicator"></span>
+								сахарные присыпки
+							</label>
+							<input class="form-topping-input" type="checkbox" name="topping" id="topping-3">
+							<label class="form-topping-label" for="topping-3">
+								<span class="topping-indicator"></span>
+								фрукты
+							</label>
+							<input class="form-topping-input" type="checkbox" name="topping" id="topping-4">
+							<label class="form-topping-label" for="topping-4">
+								<span class="topping-indicator"></span>
+								сиропы
+							</label>
+							<input class="form-topping-input" type="checkbox" name="topping" id="topping-5">
+							<label class="form-topping-label" for="topping-5">
+								<span class="topping-indicator"></span>
+								джемы
+							</label>
+						</div>
 			  		</fieldset>
 			  		<div class="form-btn">
 					  	<input type="submit" value="Применить">
@@ -177,187 +217,211 @@
 					<div class="img-product">
 						<a href="#"><img src="img/ice_1.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>310 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							310
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</p>
-					<!-- <div class="action-product">
+						<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_2.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>380 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							380
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_3.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>355 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							355
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_4.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>415 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							415
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_5.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>325 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							325
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное с брусничным джемом</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_6.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>410 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							410
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочно-черничное с цельными ягодами черники</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_7.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>375 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							375
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_8.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>320 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							320
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное с шоколадной стружкой</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_9.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>440 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							440
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочно-ванильное с кусочками шоколада</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_10.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>435 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							435
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное с ментоловым сиропом</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_11.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>355 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							355
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное с кусочками черного шоколада</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 				<article class="card-product">
 					<div class="img-product">
 						<a href="#"><img src="img/ice_12.jpg" width="267" height="267" alt="фотография мороженого"></a>
 						<div class="price-product">
-							<span>420 <img class="rub" src="img/rub.png" width="26" height="31" alt="руб.">/кг</span>
+							420
+							<span class="rub">руб.</span>
+							<span class="kg">/кг</span>
 						</div>
 					</div>
 					<p class="name-product">
 					  	<a href="#">Сливочное с мятным сиропом</a>
 					</p>
-					<!-- <div class="action-product">
+					<div class="action-product">
 						<a class="btn action-product-btn" href="#">Быстрый просмотр</a>
-					</div> -->
+					</div>
 				</article>
 			</section>
-			<div class="pagination">
-				<span class="page-previous">&lt;</span>
-				<span class="page-active">1</span>
-				<a class="page" href="#">2</a>
-				<a class="page" href="#">3</a>
-				<a class="page" href="#">4</a>
-				<a class="page" href="#">5</a>
-				<a class="page-next" href="#">&gt;</a>
+			<div class="paginator">
+				<span class="paginator-element prev disabled">Назад</span>
+				<span class="paginator-element page-active current">1</span>
+				<a class="paginator-element page" href="#">2</a>
+				<a class="paginator-element page" href="#">3</a>
+				<a class="paginator-element page" href="#">4</a>
+				<a class="paginator-element page" href="#">5</a>
+				<a class="paginator-element next" href="#">Вперёд</a>
 			</div>
 		</main>
 		<footer class="main-footer clearfix">
 			<section class="footer-social">
-			  	<a class="social-btn sotial-tw" href="#">Твиттер</a>
-			  	<a class="social-btn sotial-inst" href="#">Инстаграм</a>
-			  	<a class="social-btn social-fb" href="#">Фейсбук</a>
-			  	<a class="social-btn social-vk" href="#">Вконтакте</a>
+			  	<a class="social-btn social-tw" href="#"></a>
+			  	<a class="social-btn social-inst" href="#"></a>
+			  	<a class="social-btn social-fb" href="#"></a>
+			  	<a class="social-btn social-vk" href="#"></a>
 			</section>
 			<nav class="footer-navigation">
 				<ul class="footer-menu">
