@@ -21,23 +21,25 @@
 					  	<ul class="menu-header">
 						  	<li class="menu-header-item">
 						  		<a class="menu-active menu-header-link" href="#">Каталог</a>
-								<ul class="menu-catalog">
-						  			<li class="menu-catalog-title">
-						  					<a>Новинки</a>
-						  			</li>
-						  			<li class="menu-catalog-item">
-						  				<a href="#">Сливочное</a>
-						  			</li>
-						  			<li class="menu-catalog-item">
-						  				<a href="#">Щербеты</a>
-						  			</li>
-						  			<li class="menu-catalog-item">
-						  				<a href="#">Фруктовый лед</a>
-						  			</li>
-						  			<li class="menu-catalog-item">
-						  				<a href="#">Мелорин</a>
-						  			</li>
-						  		</ul>
+						  		<div class="menu-catalog-hide">
+									<ul class="menu-catalog">
+							  			<li class="menu-catalog-title">
+							  				<a href="#">Новинки</a>
+							  			</li>
+							  			<li class="menu-catalog-item">
+							  				<a href="#">Сливочное</a>
+							  			</li>
+							  			<li class="menu-catalog-item">
+							  				<a href="#">Щербеты</a>
+							  			</li>
+							  			<li class="menu-catalog-item">
+							  				<a href="#">Фруктовый лед</a>
+							  			</li>
+							  			<li class="menu-catalog-item">
+							  				<a href="#">Мелорин</a>
+							  			</li>
+						  			</ul>
+						  		</div>
 						  	</li>
 						  	<li>
 						  		<a class="menu-header-link" href="#">Доставка и оплата</a>
@@ -50,37 +52,41 @@
 				  	<div class="user-block">
 				  		<div class="actions">
 				  			<div class="action-search">
-				  				<a class="user-block-btn action-search-btn" href="#"></a>
-				  				<div class="search">
-				  					<form class="search-form" action="#" method="post">
-				  						<div class="search-field">
-				  							<input type="search" name="search" id="search" required>
-				  							<label class="search-placeholder" for="search">Что ищем?</label>
-				  						</div>
-				  					</form>
-				  				</div>
+				  				<a class="user-block-btn action-search-btn" href="#">Поиск</a>
+				  				<div class="search-hide">
+					  				<div class="search">
+					  					<form class="search-form" action="#" method="post">
+					  						<div class="search-field">
+					  							<input type="search" name="search" id="search" required>
+					  							<label class="search-placeholder" for="search">Что ищем?</label>
+					  						</div>
+					  					</form>
+					  				</div>
+					  			</div>
 				  			</div>
 				  			<div class="action-enter">
 				  				<a class="user-block-btn action-enter-btn" href="#">Вход</a>
-				  				<div class="enter">
-				  					<form class="enter-form" action="#" method="post">
-				  						<div class="login-field">
-				  							<input type="email" name="login" id="login" required>
-				  							<label class="login-placeholder" for="login">Электронная почта</label>
-				  						</div>
-				  						<div class="password-field">
-				  							<input type="password" name="password" id="password" required>
-				  							<label class="password-placeholder" for="password">Пароль</label>
-				  						</div>
-				  						<div class="enter-help">
-				  							<input class="btn enter-form-btn" type="submit" value="Войти">
-				  							<div class="help">
-				  								<a class="new-password" href="#">Забыли пароль?</a>
-				  								<a class="new-user" href="#">Новая регистрация</a>
-				  							</div>
-				  						</div>
-				  					</form>
-				  				</div>
+				  				<div class="enter-hide">
+					  				<div class="enter">
+					  					<form class="enter-form" action="#" method="post">
+					  						<div class="login-field">
+					  							<input type="email" name="login" id="login" required>
+					  							<label class="login-placeholder" for="login">Электронная почта</label>
+					  						</div>
+					  						<div class="password-field">
+					  							<input type="password" name="password" id="password" required>
+					  							<label class="password-placeholder" for="password">Пароль</label>
+					  						</div>
+					  						<div class="enter-help">
+					  							<input class="btn enter-form-btn" type="submit" value="Войти">
+					  							<div class="help">
+					  								<a class="new-password" href="#">Забыли пароль?</a>
+					  								<a class="new-user" href="#">Новая регистрация</a>
+					  							</div>
+					  						</div>
+					  					</form>
+					  				</div>
+					  			</div>
 				  			</div>
 				  			<div class="action-basket">
 				  				<a class="user-block-btn action-basket-btn" href="#">Пусто</a>
@@ -206,7 +212,7 @@
 					  			Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
 					  		</p>
 					  		<p class="advantages-product advantage-3">
-					  			Для приготовления мороженого используются настоящие слибки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+					  			Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
 					  		</p>
 					  		<p class="advantages-product advantage-4">
 					  			Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
@@ -223,7 +229,7 @@
 						  		<form class="email-form" action="#" method="post">
 						  			<div class="email-field">
 						  				<input type="email" id="email" required>
-						  				<label for="email">Электронная почта</label>
+						  				<label class="email-field-label" for="email">Электронная почта</label>
 						  			</div>
 						  			<input class="btn email-btn" type="submit" value="Отправить">
 						  		</form>
@@ -237,12 +243,12 @@
 						  		<br>
 						  		и офлайн магазина:
 						  		<br>
-						  		<span>ул. Большая Конюшенная
+						  		<span class="address">ул. Большая Конюшенная
 						  		<br>
 						  	19/8, Санкт-Петербург</span></p>
 						  	<p>Для заказов по телефону:
 						  	<br>
-						  	<span>8 812 450-25-25</span>
+						  	<span class="address-phone">8 812 450-25-25</span>
 						  	<br>
 						  	(с 10 до 20 ежедневно)</p>
 						  	<a class="btn address-contacts-btn" href="#">Форма обратной связи</a>
@@ -300,6 +306,8 @@
 				  			<input  class="btn feedback-btn" type="submit" value="Отправить">
 				  		</fieldset>
 				  	</form>
+				</div>
+				<div class="modal-overlay">
 				</div>
 			</div>
 		</div>
