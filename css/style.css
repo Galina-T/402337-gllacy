@@ -1627,13 +1627,15 @@ body > input[type="radio"] {
 .map-img-i {
 	position: absolute;
 	box-sizing: border-box;
-	left: -67px;
-	top: -16px;
+	left: -27px;
 	width: 1200px;
 	min-height: 428px;
 	z-index: 2;
 }
 
+.map-img-i iframe {
+	border: 0;
+}
 
 .paginator {
 	margin: 0;
