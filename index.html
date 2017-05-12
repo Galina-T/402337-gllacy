@@ -19,32 +19,32 @@
 				  	</div>
 			  		<nav class="main-navigation">
 					  	<ul class="menu-header">
-						  	<li class="menu-header-item">
-						  		<a class="menu-active menu-header-link" href="#">Каталог</a>
+						  	<li class="menu-element menu-header-item">
+						  		<a class="menu-header-link" href="#">Каталог</a>
 						  		<div class="menu-catalog-hide">
 									<ul class="menu-catalog">
-							  			<li class="menu-catalog-title">
-							  				<a href="#">Новинки</a>
+							  			<li class="menu-catalog-item menu-catalog-title">
+							  				<a class="menu-catalog-link" href="#">Новинки</a>
 							  			</li>
 							  			<li class="menu-catalog-item">
-							  				<a href="#">Сливочное</a>
+							  				<a class="menu-catalog-link" href="catalog.html">Сливочное</a>
 							  			</li>
 							  			<li class="menu-catalog-item">
-							  				<a href="#">Щербеты</a>
+							  				<a class="menu-catalog-link" href="#">Щербеты</a>
 							  			</li>
 							  			<li class="menu-catalog-item">
-							  				<a href="#">Фруктовый лед</a>
+							  				<a class="menu-catalog-link" href="#">Фруктовый лед</a>
 							  			</li>
 							  			<li class="menu-catalog-item">
-							  				<a href="#">Мелорин</a>
+							  				<a class="menu-catalog-link" href="#">Мелорин</a>
 							  			</li>
 						  			</ul>
 						  		</div>
 						  	</li>
-						  	<li>
+						  	<li class="menu-element">
 						  		<a class="menu-header-link" href="#">Доставка и оплата</a>
 						  	</li>
-						  	<li>
+						  	<li class="menu-element">
 						  		<a class="menu-header-link" href="#">О Компании</a>
 						  	</li>
 					  	</ul>
@@ -237,6 +237,9 @@
 					</section>
 				  	<div class="map clearfix">
 				  		<div class="map-img"></div>
+				  		<dir class="map-img-i">
+				  			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="428" frameborder="0" style="border:0" allowfullscreen></iframe>
+				  		</dir>
 				  		<address class="address-contacts">
 						  	<p>
 						  		Адрес главного офиса
@@ -311,5 +314,55 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var link = document.querySelector(".address-contacts-btn");
+			var popup = document.querySelector(".modal-content");
+			var close = popup.querySelector(".modal-content-close");
+			var form = popup.querySelector(".feedback-form");
+			var name = popup.querySelector("[name=name]");
+			var email = popup.querySelector("[name=feedback-email]");
+			var storage = localStorage.getItem("name");
+			var overlay = document.querySelector(".modal-overlay");
+
+			link.addEventListener("click", function(event) { 
+				event.preventDefault();
+				popup.classList.add("modal-content-show");
+				overlay.classList.add("modal-overlay-show")
+				if (storage) {
+          			name.value = storage;
+          			email.focus();
+       			}	else {
+					name.focus();
+				}
+			});
+
+			close.addEventListener("click", function(event) {
+        		event.preventDefault();
+        		popup.classList.remove("modal-content-show");
+        		popup.classList.remove("modal-error");
+        		overlay.classList.remove("modal-overlay-show")
+      		});
+
+      		form.addEventListener("submit", function(event) {
+        		if (!name.value || !email.value) {
+          			event.preventDefault();
+          			popup.classList.remove("modal-error");
+          			popup.offsetWidth = popup.offsetWidth;
+          			popup.classList.add("modal-error");
+        		} else {
+          		  localStorage.setItem("name", name.value);
+        		}
+      		});
+
+      		window.addEventListener("keydown", function(event) {
+        		if (event.keyCode === 27) {
+          			if (popup.classList.contains("modal-content-show")) {
+            			popup.classList.remove("modal-content-show");
+            			popup.classList.remove("modal-error");
+            			overlay.classList.remove("modal-overlay-show")
+          			}
+        		}
+      		});
+		</script>
   </body>
 </html>
