@@ -92,6 +92,7 @@ body > input[type="radio"] {
 	padding-bottom: 6.8px;
 	padding-left: 13px;
 	border-radius: 40px;
+	vertical-align: top;
 	cursor: pointer;
 }
 
@@ -311,7 +312,6 @@ body > input[type="radio"] {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	width: 341px;
 	padding-top: 36px;
 	z-index: 3;
 }
@@ -319,7 +319,6 @@ body > input[type="radio"] {
 .search {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
-	width: 341px;
 	padding: 20px 15px;
 	border-radius: 6px;
 	background-color: rgb(248, 247, 244);
@@ -883,6 +882,7 @@ body > input[type="radio"] {
 	font-weight: 400;
 	color: rgb(255, 255, 255);
 	text-align: left;
+	vertical-align: top;
 }
 
 .breadcrumbs-element a:after {
@@ -1172,7 +1172,6 @@ body > input[type="radio"] {
 }
 
 .form-topping {
-	width: 702px;
 	margin-right: 10px;
 }
 
@@ -1194,7 +1193,6 @@ body > input[type="radio"] {
 	padding-right: 18px;
 	padding-bottom: 10px;
 	padding-left: 16px;
-	width: 702px;
 	font-size: 0px;
 	border-radius: 18px;
 	background-color: rgba(255,255,255, 0.2);  
@@ -1419,7 +1417,6 @@ body > input[type="radio"] {
 .name-product {
 	margin: 0;
 	padding: 0 5px;
-	padding-left: 6px;
 	text-align: center;
 }
 
@@ -1523,7 +1520,6 @@ body > input[type="radio"] {
 .advantages-product:nth-child(2n) {
 	float: right;
 }
-
 
 .advantages-product::before {
 	content: "";
@@ -1744,15 +1740,16 @@ body > input[type="radio"] {
 
 .map-img-i iframe {
 	border: 0;
+	width: 100%;
+	height: 428px;
 }
 
 .paginator {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	margin: 0;
-	margin-right: -7px;
 	padding: 0;
-	padding-top: 43px;
+	padding-top: 42px;
 	padding-bottom: 30px;
 	text-align: right;
 	white-space: nowrap;
@@ -1764,40 +1761,52 @@ body > input[type="radio"] {
 			box-sizing: border-box;
 	display: inline-block;
 	margin: 0;
-	padding-top: 0px;
-	padding-right: 8px;
-	padding-bottom: 0px;
-	padding-left: 8px;
-	min-width: 25px;
-	height: 25px;
+	padding-top: 4px;
+	padding-right: 2px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	min-width: 26px;
+	height: 26px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	border-radius: 50%;
-	line-height: 24px;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.prev,
+.next {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	display: inline-block;	
+	position: relative;
+	margin: 0;
+	width: 9px;
+	height: 26px;	
+	text-indent: -10000px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .prev {
-	position: relative;
-	text-indent: -10000px;
-	margin-right: 3px;
+	margin-right: 10px;
 }
 
 .next {
-	position: relative;
-	text-indent: -10000px;
-	margin-left: 3px;
+	margin-left: 10px;
 }
 
 .prev::before {
 	content: "";
 	position: absolute;
-	top: 7px;
-	left: 10px;
+	top: 8px;
+	left: 2px;
 	width: 8px;
 	height: 8px;
 	border-bottom: 2px solid rgb(255, 255, 255);
@@ -1809,8 +1818,8 @@ body > input[type="radio"] {
 .next::before {
 	content: "";
 	position: absolute;
-	top: 7px;
-	left: 6px;
+	top: 8px;
+	left: -3px;
 	width: 8px;
 	height: 8px;
 	border-bottom: 2px solid rgb(255, 255, 255);
@@ -1822,24 +1831,24 @@ body > input[type="radio"] {
 .current {
 	background-color: rgb(255, 255, 255);
 	color: rgb(50, 50, 50);
+	margin-right: -2px;
 }
 
 .disabled {
 	opacity: 0.2;
 }
 
-.paginator a:hover {
+.paginator .paginator-element:hover {
 	background: rgba(255, 255, 255, 0.2);
 }
 
-.paginator a:active {
-	background: rgba(255, 255, 255, 1);
-	color: rgb(50, 50, 50)
+.paginator .current:hover {
+	background: rgb(255, 255, 255);
 }
 
-.next:active::before {
-	border-bottom: 2px solid rgb(50, 50, 50);
-	border-left: 2px solid rgb(50, 50, 50);
+.paginator .paginator-element:active {
+	background: rgba(255, 255, 255, 1);
+	color: rgb(50, 50, 50)
 }
 
 .main-footer {
@@ -1921,6 +1930,7 @@ body > input[type="radio"] {
 	min-width: 138px;
 	margin-right: 4px;
 	margin-bottom: 8px;
+	vertical-align: top;
 }
 
 .footer-menu a {
@@ -2340,7 +2350,6 @@ body > input[type="radio"] {
 }
 
 .enter-form-btn {
-	width: 100px;
 	margin-right: 21px;
 	padding-top: 13px;
 	padding-right: 25px;
